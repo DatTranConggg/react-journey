@@ -12,6 +12,9 @@ function App() {
     hobbyList: 'nhau'
   }
 
+  function handleOnClick(name: string) {
+    console.log("something !!!", name);
+  }
 
 
   return (
@@ -19,7 +22,7 @@ function App() {
       <Header></Header>
       <Footer></Footer>
 
-      <Student student={john} />
+      <Student student={john} onClick={handleOnClick} />
     </>
   )
 }
