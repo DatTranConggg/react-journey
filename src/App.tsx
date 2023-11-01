@@ -1,7 +1,7 @@
+import { StudentModel } from 'models'
 import './App.css'
 import { Header, Footer } from './components/common'
-import { Student } from './features/labs/Student'
-import { StudentModel } from './models'
+import { Student } from 'features/labs/Student'
 
 function App() {
 
