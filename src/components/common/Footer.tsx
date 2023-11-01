@@ -1,8 +1,10 @@
 
+
 export interface FooterProps {
 }
 
-export function Footer (props: FooterProps) {
+export function Footer () {
+  
   return (
     <div>
       Footer
