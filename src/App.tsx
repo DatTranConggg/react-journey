@@ -1,38 +1,44 @@
 import { StudentModel } from 'models'
 import './App.css'
-import { Header, Footer } from './components/common'
 import { Student } from 'features/labs/Student'
 import MainLayout from 'layout/MainLayout'
+import { Gallery } from 'features/labs/Gallery'
+import { InputIssue } from 'features/labs/InputIssue'
+import FeedbackForm from 'features/labs/FeedbackForm'
 
 function App() {
-
   const john: StudentModel = {
-    name: "John",
+    name: 'John',
     age: 22,
     isHero: true,
-    hobbyList: 'nhau'
+    hobbyList: 'nhau',
   }
 
-
   const noo: StudentModel = {
-    name: "Noo",
+    name: 'Noo',
     age: 22,
     isHero: true,
-    hobbyList: 'nhau'
+    hobbyList: 'nhau',
   }
 
   function handleOnClick(name: string) {
-    console.log("something !!!", name);
+    console.log('something !!!', name)
   }
 
+  function testHandleClick() {
+    console.log('testHanleClick !!!')
+  }
 
   return (
     <>
+      <InputIssue />
+      <FeedbackForm />
+      {/* <button onClick={testHandleClick}>test</button>
       <MainLayout>
         <Student student={noo} onClick={handleOnClick} />
       </MainLayout>
 
-      <Student student={john} onClick={handleOnClick} />
+      <Student student={john} onClick={handleOnClick} /> */}
     </>
   )
 }
