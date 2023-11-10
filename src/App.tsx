@@ -31,14 +31,7 @@ function App() {
 
   return (
     <>
-      <InputIssue />
-      <FeedbackForm />
-      {/* <button onClick={testHandleClick}>test</button>
-      <MainLayout>
-        <Student student={noo} onClick={handleOnClick} />
-      </MainLayout>
-
-      <Student student={john} onClick={handleOnClick} /> */}
+      <div>Hello</div>
     </>
   )
 }
