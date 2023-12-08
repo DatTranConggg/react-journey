@@ -29,7 +29,11 @@
       "src/*": [
         "./src/*"
       ]
-    }
+    },
+    "typeRoots": [
+      "../node_modules/@types",
+      "../@types"
+    ]
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]

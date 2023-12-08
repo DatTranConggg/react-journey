@@ -1,7 +1,20 @@
+import { useEffect } from 'react'
+// @ts-ignore
+import productApi from './api/productApi'
 import './App.css'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { Route, Link } from 'react-router-dom'
 
 function App() {
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const res = await productApi.getAll()
+      console.log(res)
+    }
+
+    fetchProducts();
+  }, [])
   return (
     <>
       <div>
