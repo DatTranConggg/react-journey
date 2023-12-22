@@ -1,3 +1,3 @@
-# React 
+# Create Store & set up
 
-```yarn create vite learn-easy-react --template react-ts```
+# Create Action & set up
